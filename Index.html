@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/formas.css"/>
+    <title>Banco de creditos</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="titulo">Banco del interes</h1>
+      <nav>
+        <a href="">Inicio</a>
+        <a href="./pages/consultas.html">Consultas</a>
+        <a href="./pages/nosotros.html">Nosotros</a>
+      </nav>
+    </header>
+    <div id="bienvenido"></div>
+    <section>
+      <h2 id="subtitulo">Calculadora</h2>
+    <form id="formulario" class="formulario" action="" method="post">
+        <label class="etiqueta" for="credito">Credito total</label>
+        <input type="number" id="credito"><br>
+        <label class="etiqueta" for="Cuotas">Cuotas</label>
+        <input type="number" id="cuotas"><br>
+        <label class="etiqueta" for="Interes">Interes</label>
+        <input type="number" id="interes"><br><br><br>
+
+        <Button id="botonEnviar" class="botonEnviar" type="button"><img src="imagenes/R.png" width="22"></Button>
+        <Button class="boton" type="reset">Borrar campos</Button>
+        <Button id="botonMostrar" class="boton" type="button">Creditos vistos en esta sesion</Button>
+        <Button id="botonCargar" class="boton" type="button">Creditos anteriores</Button><br>
+        
+    </form><br>
+
+    <div>
+      <div id="mostrarCreditos"><br><br><br><br></div>
+      <br><br><br><br><div id="mostrarDatos"></div>
+    </div>
+    <div id="resultado"></div>
+    </section>
+  
+    <footer>
+      <h3 class="nehuenperticarari">Design by Nehuen Perticarari</h3>
+      <a href="mailto:nehuenperticarari@gmail.com">Contacto por mail</a><br>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <div id="datosjson"></div>
+  </body>
+</html>
